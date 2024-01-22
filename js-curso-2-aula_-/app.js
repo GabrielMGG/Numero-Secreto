@@ -28,6 +28,7 @@ function verificarChute()
         let mensagemTentativa = `Voce descobriu o numero secreto! Depois de ${tentativas} ${diferençatentativa} `;
         exibirTextoNaTela('p', mensagemTentativa);
         document.getElementById('reiniciar').removeAttribute('disabled');
+        document.getElementById('chute').setAttribute('disabled', true);
         
     }
     else
@@ -80,6 +81,7 @@ function reiniciarJogo()
     tentativas = 1;
     mensagemTextoNaTela();
     document.getElementById('reiniciar').setAttribute('disabled', true);
+    document.getElementById('chute').removeAttribute('disabled');
 }
 
 
