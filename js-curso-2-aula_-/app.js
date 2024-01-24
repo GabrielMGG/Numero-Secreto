@@ -43,6 +43,14 @@ function verificarChute()
             exibirTextoNaTela('p', 'O numero secreto e maior');
         }
         limparTela();
+        if(tentativas == 30)
+        {
+            exibirTextoNaTela('p', `Acredito que nem na sua proxima rencarnação voce acertara o numero secreto, este e o numero secreto ${numeroSecreto}`)
+        }
+        else if(tentativas == 40)
+        {
+            exibirTextoNaTela('p', `Se voce chegou ate aqui, feche seu navegador e nao teste mais sua inteligencia, este e o numero secreto ${numeroSecreto}, caso nao entendeu e so digitar esse numero que voce ganha.`)
+        }
     }
 }
 
